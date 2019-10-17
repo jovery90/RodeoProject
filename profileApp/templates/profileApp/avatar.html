@@ -5,11 +5,16 @@
 
 {% load staticfiles %}
 
-<div class="container">
+
+
+
+<div class="pull-right">
+  <div class="" id="coolStuff">
+
+
   <h1 id="thisTag">{{user.username}}'s Avatar</h1>
   <!-- <h2>{{user.gender}}</h2> This works to access other fields -->
-
-<input onclick="testStuff();" type="submit" name="" value="TESTING">
+<br>
   <form id="testForm" method="post" >
 
 
@@ -19,43 +24,51 @@
       {% bootstrap_form form %}
         </div>
 
-      <input type="submit" value="Save"/>
+      <button  id="avatarSave"  type="submit" ><span class="glyphicon glyphicon-floppy-disk"></span></button>
+
+
 
   </form>
 
 
+  </div>
 
-</div>
+
 
 
 <table>
   <tr>
     <td>Hair</td>
-    <td onclick="hairSub();">&nbsp-</td>
-    <td onclick="hairAdd();">&nbsp+</td>
+    <td class="glyphicon glyphicon-circle-arrow-left" onclick="hairSub();"></td>
+    <td>&nbsp</td>
+    <td class="glyphicon glyphicon-circle-arrow-right" onclick="hairAdd();"></td>
   </tr>
   <tr>
-    <td>Eye Brows</td>
-    <td onclick="eyebrowSub();">&nbsp-</td>
-    <td onclick="eyebrowAdd();">&nbsp+</td>
+    <td>Eyebrows</td>
+    <td class="glyphicon glyphicon-circle-arrow-left" onclick="eyebrowSub();"></td>
+    <td>&nbsp</td>
+    <td class="glyphicon glyphicon-circle-arrow-right" onclick="eyebrowAdd();"></td>
   </tr>
   <tr>
     <td>Eyes</td>
-    <td onclick="eyeSub();">&nbsp-</td>
-    <td onclick="eyeAdd();">&nbsp+</td>
+    <td class="glyphicon glyphicon-circle-arrow-left" onclick="eyeSub();"></td>
+    <td>&nbsp</td>
+    <td class="glyphicon glyphicon-circle-arrow-right" onclick="eyeAdd();"></td>
   </tr>
   <tr>
     <td>Nose</td>
-    <td onclick="noseSub();">&nbsp-</td>
-    <td onclick="noseAdd();">&nbsp+</td>
+    <td class="glyphicon glyphicon-circle-arrow-left" onclick="noseSub();"></td>
+    <td>&nbsp</td>
+    <td class="glyphicon glyphicon-circle-arrow-right" onclick="noseAdd();"></td>
   </tr>
   <tr>
     <td>Mouth</td>
-    <td onclick="mouthSub();">&nbsp-</td>
-    <td onclick="mouthAdd();">&nbsp+</td>
+    <td class="glyphicon glyphicon-circle-arrow-left" onclick="mouthSub();"></td>
+    <td>&nbsp</td>
+    <td class="glyphicon glyphicon-circle-arrow-right" onclick="mouthAdd();"></td>
   </tr>
 </table>
-
+</div>
 <!-- <img id="mainBody" src="../../../static/Rodeo/images/body.png" alt=""> -->
 <img id="mainBody" src="{% static "Rodeo/images/body.png" %}" alt="">
 <img id="mainHead" src="{% static "Rodeo/images/head.png" %}" alt="">

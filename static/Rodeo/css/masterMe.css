@@ -1,10 +1,41 @@
-h1 {
-  color: green;
+.navbar {
+    color: yellow;
+    background-color: black;
+}
+.nav {
+
+    color: yellow;
+    background-color: black;
 }
 
 
+h1 {
+  font-size: 4em;
+}
+
+#indexHead {
+  text-align: center;
+}
+
+#thisTag {
+  font-size: 4em;
+}
+
+#coolStuff {
+  text-align: center;
+}
+
+#avatarSave {
+  text-align: right;
+}
+
+.glyphicon.glyphicon-floppy-disk {
+  font-size: 5em;
+
+}
+
 table {
-  font-size: 10em;
+  font-size: 4em;
 }
 
 #mainEyebrows{

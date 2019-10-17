@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Rodeo</title>
+    <title>Rebound</title>
     <!-- Style sheet -->
 
 
@@ -23,7 +23,13 @@
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
+    <style media="screen">
+    body {
+        background-repeat:no-repeat;
+        background-attachment: fixed;
+}
 
+    </style>
 
 
 <!-- AVATAR -->
@@ -31,14 +37,14 @@
 
 
   </head>
+  <!-- <body background="../static/Rodeo/images/hiphop.jpg"> -->
 
-
-  <body>
+  <body background="{% static "Rodeo/images/hiphop.jpg" %}">
 
     <nav class="navbar  mynav" role="navigation" id="navbar">
     			<div class="container">
 
-            <a class="navbar-brand mynav" href="{% url 'home' %}">Rodeo</a>
+            <a class="navbar-brand mynav" href="{% url 'home' %}">Rebound</a>
 
     					<ul class="nav navbar-nav navbar-right">
     						{% if user.is_authenticated %}
