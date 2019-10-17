@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% load bootstrap3 %}
+
+{% block content %}
+
+{% load staticfiles %}
+
+<div class="container">
+  <h1 id="thisTag">{{user.username}}'s Avatar</h1>
+  <!-- <h2>{{user.gender}}</h2> This works to access other fields -->
+
+<input onclick="testStuff();" type="submit" name="" value="TESTING">
+  <form id="testForm" method="post" >
+
+
+
+      {% csrf_token %}
+        <div class="" style='display:none'>
+      {% bootstrap_form form %}
+        </div>
+
+      <input type="submit" value="Save"/>
+
+  </form>
+
+
+
+</div>
+
+
+<table>
+  <tr>
+    <td>Hair</td>
+    <td onclick="hairSub();">&nbsp-</td>
+    <td onclick="hairAdd();">&nbsp+</td>
+  </tr>
+  <tr>
+    <td>Eye Brows</td>
+    <td onclick="eyebrowSub();">&nbsp-</td>
+    <td onclick="eyebrowAdd();">&nbsp+</td>
+  </tr>
+  <tr>
+    <td>Eyes</td>
+    <td onclick="eyeSub();">&nbsp-</td>
+    <td onclick="eyeAdd();">&nbsp+</td>
+  </tr>
+  <tr>
+    <td>Nose</td>
+    <td onclick="noseSub();">&nbsp-</td>
+    <td onclick="noseAdd();">&nbsp+</td>
+  </tr>
+  <tr>
+    <td>Mouth</td>
+    <td onclick="mouthSub();">&nbsp-</td>
+    <td onclick="mouthAdd();">&nbsp+</td>
+  </tr>
+</table>
+
+<!-- <img id="mainBody" src="../../../static/Rodeo/images/body.png" alt=""> -->
+<img id="mainBody" src="{% static "Rodeo/images/body.png" %}" alt="">
+<img id="mainHead" src="{% static "Rodeo/images/head.png" %}" alt="">
+<img id="mainNose" src="{% static "Rodeo/images/null.png" %}">
+<img id="mainEyes" src="{% static "Rodeo/images/null.png" %}">
+<img id="mainEyebrows" src="{% static "Rodeo/images/null.png" %}">
+<img id="mainMouth" src="{% static "Rodeo/images/null.png" %}">
+<img id="mainHair" src="{% static "Rodeo/images/null.png" %}">
+
+
+
+<!-- <script type="text/javascript">
+  var nosePath = "{% static "Rodeo/images/body.png" %}"
+  var eyesPath = "{% static "Rodeo/images/null.png" %}"
+  var eyebrowsPath = "{% static "Rodeo/images/null.png" %}"
+  var mouthPath = "{% static "Rodeo/images/null.png" %}"
+  var hairPath = "{% static "Rodeo/images/null.png" %}"
+</script> -->
+
+<script src="{% static "Rodeo/js/masterMe.js" %}" type="text/javascript" ></script>
+
+<script>
+   window.onload=changeEyes(); changeEyebrows(); changeHair(); changeNoses(); changeMouths();
+</script>
+
+{% endblock %}
+<!-- {{ form.field.as_hidden }} -->

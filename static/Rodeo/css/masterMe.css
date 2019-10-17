@@ -1,0 +1,68 @@
+h1 {
+  color: green;
+}
+
+
+table {
+  font-size: 10em;
+}
+
+#mainEyebrows{
+    position:absolute;
+    top: 185px;
+    left: 304px;
+    background: url("../images/eyeBrows.png") no-repeat -2px 0;
+
+width: 308px;
+height: 37px;
+  }
+
+#mainMouth {
+    position:absolute;
+    top: 440px;
+    left: 356px;
+    background: url("../images/mouths.png") no-repeat -344px -337px;
+width: 185px;
+height: 80px;
+  }
+
+#mainNose {
+position:absolute;
+top: 340px;
+left: 400px;
+background: url("../images/noses.png") no-repeat -604px -16px;
+width: 72px;
+height: 81px;
+}
+
+#mainEyes {
+  position:absolute;
+  top: 220px;
+  left: 330px;
+  background: url("../images/eyes.png") no-repeat -331px -6px;
+   width: 251px;
+    height: 114px;
+}
+
+#mainHead{
+  position: absolute;
+  top: 90px;
+  left: 230px;
+  width: 500px;
+}
+
+#mainBody {
+position: absolute;
+top: 490px;
+left: 10px;
+width: 800px;
+}
+
+#mainHair {
+  position:absolute;
+  top: 0px;
+  left: 204px;
+  background: url('../images/hair.png') no-repeat -72px 0;
+width: 542px;
+height: 327px;
+}
