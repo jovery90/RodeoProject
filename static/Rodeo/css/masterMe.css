@@ -1,3 +1,24 @@
+#welcomeText {
+text-align: center;
+background-color:white;
+padding: 5px;
+width: 50%;
+margin: 0 auto;
+}
+
+#registerForm {
+  background-color:lightgray;
+  padding: 20px;
+}
+
+#loginForm {
+  background-color:lightgray;
+  padding: 50px;
+}
+
+
+
+
 .navbar {
     color: yellow;
     background-color: black;

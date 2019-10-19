@@ -52,7 +52,7 @@
                       <li><a href="{% url 'profileApp:editsettings' pk=user.pk%}" class="btn btn-simple">Settings</a></li>
                       <li><a href="{% url 'profileApp:logout' %}" class="btn btn-simple">Log out</a></li>
     						{% else %}
-    						      <li><a href="{% url 'profileApp:signup' %}" class="btn btn-simple">Sign up</a></li>
+    						      <li><a href="{% url 'profileApp:signup' %}" class="btn btn-simple">Register</a></li>
                       <li><a href="{% url 'profileApp:login' %}" class="btn btn-simple">Log in</a></li>
     						{% endif %}
     					</ul>
